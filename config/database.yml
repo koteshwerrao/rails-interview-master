@@ -4,7 +4,7 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: mysql2
+  adapter:  postgresql
   database: rails_interview
   username: root
   password: 
@@ -22,7 +22,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter:  postgresql
+  database: rails_interview
+  username: postgres
+  password: postgres
+  host: localhost
   pool: 5
   timeout: 5000
